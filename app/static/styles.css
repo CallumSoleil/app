@@ -1,0 +1,101 @@
+body {
+	background-color: white;
+	font-family: Arial;
+}
+
+nav {
+	background-color: #555555;
+	padding: 10px;
+	display: inline-block;
+	width: 100%;
+}
+
+nav a{
+	color: white;
+	padding: 15px;
+	margin: 0 20px;
+}
+
+nav a:hover {
+	color: lightgrey;
+	text-decoration: bold underline;
+}
+
+.genre_select {
+    display: inline-block;
+    margin: 5px;
+    padding: 7px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: lightgray;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: green;
+}
+
+
+input[type="checkbox"]:hover {
+    background-color: lightgreen;
+}
+
+
+.movie{
+    margin: 5px;
+    padding: 7px 10px;
+    border: 2px solid #222222;
+    border-radius: 5px;
+    background-color: darkgray;
+    text-align: center;
+}
+.movie h5{
+    text-decoration: underline;
+}
+.movie p{
+    font-style: italic;
+}
+
+.genre_box{
+    display: inline-block;
+    margin: 5px;
+    padding: 7px 10px;
+    border: 2px solid darkgray;
+    border-radius: 5px;
+    background-color: darkgray;
+    text-align: center; 
+    font-style: normal;
+}
+
+.clear{
+    margin: 5px;
+    padding: 7px 10px;
+    border: 2px solid #222222;
+    border-radius: 5px;
+    background-color: rgb(236, 74, 74);
+    text-align: center;
+    color: black;
+}
+
+.add{
+    margin: 5px;
+    padding: 7px 10px;
+    border: 2px solid #222222;
+    border-radius: 5px;
+    background-color: rgb(74, 225, 236);
+    text-align: center;
+    color: black;
+}

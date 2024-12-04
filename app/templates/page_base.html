@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+		<header>
+			<nav>
+				<a href="/">Movies</a>
+				<a href="/watchlist">Watchlist</a>
+				<a href="/recommended">Recommended</a>
+				<a href="/logout">Log Out</a>
+			</nav>
+		</header>
+		<div>
+			{% block contents %}{% endblock %}
+		</div>
+{% endblock %}

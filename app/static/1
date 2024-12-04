@@ -1,0 +1,53 @@
+body {
+	background-color: white;
+	font-family: Arial;
+}
+
+.task {
+	background-color: lightgrey;
+	border: 2px solid black;
+	border-radius: 5px;
+	margin: 10px 10;
+	max-width: 1000
+}
+
+
+.task a {
+	color: white;
+	background-color: #555555;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.task a:hover {
+	color: lightgrey;
+	text-decoration: bold underline;
+}
+
+.complete {
+	border: 2px solid green;
+}
+
+.uncomplete {
+	border: 2px solid red;
+}
+
+nav {
+	background-color: #555555;
+	padding: 10px;
+	display: inline-block;
+	width: 100%;
+}
+
+nav a{
+	color: white;
+	padding: 15px;
+	margin: 0 20px;
+}
+
+nav a:hover {
+	color: lightgrey;
+	text-decoration: bold underline;
+}
+

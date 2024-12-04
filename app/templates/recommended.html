@@ -1,0 +1,29 @@
+{% extends "page_base.html" %}
+{% block contents %}
+<h3>Recommended Movies</h3>
+{{ message }}
+{% for movie in movies %}
+<div class="movie">
+	<h5>{{ movie.title }}</h5>
+	<p>{{ movie.release }}<br>
+	{{ movie.description }}<br>
+    <div class="genres">
+        <p>
+        {% for film_genre in movie.genres %}
+        <span class="genre_box">
+            {{ film_genre.name }}
+        </span>
+        {% endfor %}
+        </p>
+    </div>
+    {% if movie in watchlist_movies %}<a class="add" href="/unadd/{{ movie.id }}">Remove</a>{% else %}
+    <a class="add" href="/add/{{ movie.id }}">Add</a>{% endif %}
+	</p>
+</div>
+{% endfor %}
+
+{% if not movies %}
+<h5>No Movies Found</h5>
+{% endif %}
+
+{% endblock %}
